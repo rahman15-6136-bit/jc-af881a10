@@ -1,0 +1,31 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  darkMode: 'class',
+  safelist: [
+    'from-indigo-400',
+    'to-purple-500',
+    'from-emerald-400',
+    'to-teal-500',
+    'from-amber-400',
+    'to-orange-500',
+    'from-rose-400',
+    'to-pink-500',
+    'from-cyan-400',
+    'to-blue-500',
+    'from-violet-400',
+    'to-purple-600',
+    'bg-amber-600',
+    'bg-gray-100',
+    'dark:bg-gray-800',
+    'text-white',
+    'text-gray-600',
+    'dark:text-gray-400',
+    'hover:bg-gray-200',
+    'dark:hover:bg-gray-700',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
