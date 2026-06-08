@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Built with Astro' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-jc-id="0JN12A">
+  <head data-jc-id="0JN0II">
+    <meta charset="UTF-8" data-jc-id="0JN0HM"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-jc-id="0JN0F2"/>
+    <meta name="description" content={description} data-jc-id="0JMZQR"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" data-jc-id="0JMZLR"/>
+    <title data-jc-id="0JMYYD">{title}</title>
+  </head>
+  <body class="bg-white text-gray-900 font-sans min-h-screen flex flex-col" data-jc-id="0JMYV2">
+    <Navbar data-jc-id="0JMY64"/>
+    <main class="flex-grow" data-jc-id="0JMY54">
+      <slot data-jc-id="0JMY2I"/>
+    </main>
+    <Footer data-jc-id="0JMXHZ"/>
+  </body>
+</html>
