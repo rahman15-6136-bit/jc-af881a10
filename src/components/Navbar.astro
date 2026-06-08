@@ -1,0 +1,39 @@
+---
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<nav class="bg-white border-gray-200 border-b sticky top-0 z-50" data-jc-id="4NYVTX">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-jc-id="4NYWHZ">
+    <div class="flex justify-between items-center h-16" data-jc-id="4NYWMH">
+      <!-- Logo -->
+      <div class="logo-wrapper" data-jc-id="4NYXBF">
+        <a href="/" class="flex items-center gap-2" data-jc-id="4NYXEQ">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center" data-jc-id="4NYY19">
+            <span class="text-white font-bold text-sm" data-jc-id="4NYYR3">J</span>
+          </div>
+          <span class="font-bold text-xl text-gray-900" data-jc-id="4NYZG1">MySite</span>
+        </a>
+      </div>
+      
+      <!-- Nav Links -->
+      <div class="nav-links hidden md:flex items-center gap-8" data-jc-id="4NZ095">
+        {navLinks.map((link) => (
+          <a href={link.href} class="text-gray-600 hover:text-blue-600 font-medium transition-colors" data-jc-id="4NZ0ZW">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="cta-wrapper flex items-center gap-4" data-jc-id="2KT7UZ">
+        <a href="/contact" class="hidden sm:inline-flex px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors" data-jc-id="2KT803">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
